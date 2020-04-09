@@ -99,6 +99,15 @@ h1::after {
     bottom: 0;
 }
 
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, #c19aff 0%, #c8c4fa 99%, #c4d1fa 100%);
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #fff;
+}
+
 
 /* About us */
 
@@ -278,11 +287,13 @@ footer {
     margin-bottom: 30px;
     border-radius: 10px;
     padding: 45px 30px 60px 30px;
-    transition: 0.5s;
+    transform: scale(1);
+    transition: transform 0.6s;
 }
 
 .articulo:hover {
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+    transform: scale(1.03);
 }
 
 .articulo>i {
@@ -304,10 +315,11 @@ footer {
 }
 
 .articulo>p {
-    font-weight: 100;
+    font-weight: 200;
     color: #5D6678;
     margin-top: 15px;
     padding-bottom: 3px;
+    margin-bottom: 10px;
 }
 
 .articulo>a {
@@ -392,6 +404,45 @@ footer {
     font-size: 20px;
 }
 
+/* Cards */
+
+.content-car{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.car{
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+    border-radius: 10px;
+    padding: 0px 10px;    
+}
+
+.car:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.car i{
+    margin: 30px 0 20px 0;
+    color: rgb(82, 31, 222);
+    font-size: 50px;
+}
+
+.car p{
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 @media screen and (max-width: 900px) {
     h1 {
@@ -451,8 +502,17 @@ footer {
         width: 400px;
     }
 
+    /* car */
+    .car{
+        width: 90%;
+        margin-bottom: 20px;
+    }
 
     /* clientes */
+
+    .contenedor-card{
+        background: #f2f2f2;
+    }
 
     .cards {
         flex-direction: column;
@@ -512,6 +572,11 @@ footer {
         background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+    }
+
+    /* car */
+    .car{
+        height: 380px;
     }
 
     /* clientes */
