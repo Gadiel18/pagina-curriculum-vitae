@@ -144,54 +144,6 @@ h1::after {
     background: #f2f2f2;
 }
 
-.galeria-port {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.imagen-port {
-    width: 24%;
-    margin-bottom: 10px;
-    height: 240px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-}
-
-.imagen-port>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.hover-galeria {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0);
-    background: rgba(24, 73, 128, 0.7);
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hover-galeria img {
-    width: 50px;
-}
-
-.hover-galeria p {
-    color: #ffffff;
-}
-
-.imagen-port:hover .hover-galeria {
-    transform: scale(1);
-}
 
 /* clientes */
 
@@ -355,7 +307,7 @@ footer {
     font-weight: 100;
     color: #5D6678;
     margin-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 3px;
 }
 
 .articulo>a {
@@ -398,7 +350,7 @@ footer {
     margin: 28px 0 0 0;
     width: 130px;
     display: inline-block;
-    background: #1FDE82;
+    background: rgb(66, 31, 222);
     text-align: center;
     color: #fff;
     padding: 12px 0;
@@ -407,7 +359,7 @@ footer {
     text-transform: uppercase;
     font-size: 14px;
     border-radius: 5px;
-    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+    box-shadow: 0 8px 32px rgba(72, 31, 222, 0.46);
 }
 
 
@@ -436,7 +388,7 @@ footer {
 }
 
 .box-skills i {
-    color: #1FDE82;
+    color: rgb(82, 31, 222);
     font-size: 20px;
 }
 
