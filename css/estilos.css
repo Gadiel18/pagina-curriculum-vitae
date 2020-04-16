@@ -100,12 +100,19 @@ h1::after {
 }
 
 .cta{
+    margin: 28px 0 0 0;
+    width: 130px;
     display: inline-block;
-    text-decoration: none;
-    background-image: linear-gradient(45deg, #c19aff 0%, #c8c4fa 99%, #c4d1fa 100%);
-    padding: 12px 15px;
-    border-radius: 8px;
+    background: rgb(66, 31, 222);
+    text-align: center;
     color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 5px 32px rgba(72, 31, 222, 0.46);
 }
 
 
@@ -154,6 +161,7 @@ h1::after {
 }
 
 
+
 /* clientes */
 
 .cards {
@@ -191,7 +199,6 @@ h1::after {
     font-weight: 300;
     padding-top: 5px;
 }
-
 
 /* our team */
 
@@ -468,7 +475,27 @@ footer {
     .articulo {
         width: 45%;
     }
+    /* galeria */
 
+    .imagen-port{
+        width: 44%;
+    }
+
+
+    .grid .item{
+        width: calc(75% - 20px);
+        display: flex;
+        justify-content: center;
+    }
+
+    .galeria .barra-busqueda{
+        width: 90%;
+    }
+
+    .overlay1 #btn-cerrar-papup{
+        right: 7px;
+        top: -20px;
+    }
 
     /* questions */
 
@@ -561,17 +588,27 @@ footer {
 
 
     video {
-        width: 0;
+       display: none;
     }
 
     .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
         background: #1a2a6c;
         /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+        background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.411), hsla(0, 70%, 41%, 0.466), hsla(228, 61%, 26%, 0.705)), url("../img/header.jpg");
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+        background:  linear-gradient(to right, hsla(41, 98%, 58%, 0.411), hsla(0, 70%, 41%, 0.466), hsla(228, 61%, 26%, 0.705)), url("../img/header.jpg");
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        /* background-attachment: fixed; */
+        background-position: center;
+        background-size: cover;
+        /* z-index: 100; */
+    }
 
+    .titulo{
+        font-size: 30px;
     }
 
     /* car */
@@ -579,6 +616,33 @@ footer {
         height: 380px;
     }
 
+    /* galeria */
+
+    .imagen-port{
+        width: 95%;
+    }
+
+    .grid .item{
+        width: calc(90% - 20px);
+    }
+
+    .grid .item img{
+        margin-left: 10px;
+    }
+
+    .galeria .barra-busqueda{
+        width: 99%;
+    }
+
+    .grid{
+        padding: 10px 40px;
+    }
+
+    .overlay1 img{
+        width: 90%;
+        justify-content: center;
+        margin-left: 10px ;
+    }
     /* clientes */
 
     .cards .card {
