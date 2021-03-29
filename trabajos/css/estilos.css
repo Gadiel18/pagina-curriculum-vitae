@@ -222,7 +222,16 @@ header .categorias a.activo{
 .imagen-port:hover .hover-galeria{
     transform: scale(1);
 }
+.imagen-port:hover{
+    transition: 1s;
+    border-radius: 20px;
+    
+}
 
+.hover-galeria:hover {
+    transition: 1s;
+    border-radius: 20px;
+}
 
 /* footer */
 
