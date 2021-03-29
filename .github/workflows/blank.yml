@@ -1,4 +1,5 @@
-name: Automatic hosting to firebase
+
+name: Automatic to Farebase
 on:
   push:
     branches:
@@ -12,7 +13,6 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
-     
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
