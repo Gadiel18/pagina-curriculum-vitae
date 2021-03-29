@@ -1,5 +1,5 @@
 
-name: Build and Deploy
+name: Automatic to Farebase
 on:
   push:
     branches:
