@@ -59,5 +59,13 @@ section h1{
     font-size: 60px;            
 }
 
+@media screen and (max-width: 500px) {
+    section h1{
+        padding-top: 300px;
+        text-align: center;
+        font-size: 40px;            
+    }
+}
+
 
 
